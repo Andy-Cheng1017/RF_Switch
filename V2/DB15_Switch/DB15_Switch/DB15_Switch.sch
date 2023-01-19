@@ -872,7 +872,12 @@ $EndComp
 Wire Wire Line
 	7550 1750 7550 1850
 Wire Wire Line
+	7550 1950 7300 1950
+Wire Wire Line
 	7300 1850 7550 1850
+Connection ~ 7550 1850
+Wire Wire Line
+	7550 1850 7550 1950
 $Comp
 L 0805:C C6
 U 1 1 620FF35A
@@ -940,45 +945,45 @@ Wire Wire Line
 Connection ~ 800  5900
 Wire Wire Line
 	800  5900 800  5550
-Text Label 1050 5450 2    50   ~ 0
-D3
 Text Label 1050 5250 2    50   ~ 0
-D4
+D3
 Text Label 1050 5050 2    50   ~ 0
-D5
+D4
 Text Label 2350 5500 2    50   ~ 0
-D6
+D5
 Text Label 2350 5400 2    50   ~ 0
-D7
-Text Label 2350 5200 2    50   ~ 0
-D9
-Text Label 7300 1950 0    50   ~ 0
-D2
+D6
 Text Label 2350 5300 2    50   ~ 0
-D8
+D7
 Text Label 2350 5100 2    50   ~ 0
-D10
-Text Label 2350 4900 2    50   ~ 0
-D12
-Text Label 2350 4800 2    50   ~ 0
-D13
+D9
+Text Label 1050 5450 2    50   ~ 0
+D2
+Text Label 2350 5200 2    50   ~ 0
+D8
 Text Label 2350 5000 2    50   ~ 0
-D11
-Text Label 1050 4850 2    50   ~ 0
-A0
-Text Label 1050 4650 2    50   ~ 0
-A1
-Text Label 1050 5350 2    50   ~ 0
-A2
-Text Label 1050 5150 2    50   ~ 0
-A3
+D10
+Text Label 2350 4800 2    50   ~ 0
+D12
 Text Label 1050 4750 2    50   ~ 0
-A4
-Text Label 1650 5450 0    50   ~ 0
-A5
-Text Label 1650 5250 0    50   ~ 0
-A6
+D13
+Text Label 2350 4900 2    50   ~ 0
+D11
 Text Label 1650 5050 0    50   ~ 0
+A0
+Text Label 1650 4850 0    50   ~ 0
+A1
+Text Label 1650 5250 0    50   ~ 0
+A2
+Text Label 1650 5450 0    50   ~ 0
+A3
+Text Label 1050 5150 2    50   ~ 0
+A4
+Text Label 1050 5350 2    50   ~ 0
+A5
+Text Label 1050 4650 2    50   ~ 0
+A6
+Text Label 1050 4850 2    50   ~ 0
 A7
 Text Label 1650 4650 0    50   ~ 0
 Reset
@@ -1203,6 +1208,70 @@ F 3 "~" H 5400 2000 50  0001 C CNN
 	1    5400 2000
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2650 5300 3400 5300
+Wire Wire Line
+	3400 5300 3400 4900
+Wire Wire Line
+	3400 4900 3550 4900
+Wire Wire Line
+	3550 4800 3050 4800
+Wire Wire Line
+	3050 4800 3050 5200
+Wire Wire Line
+	3050 5200 2650 5200
+Wire Wire Line
+	2650 4800 3000 4800
+Wire Wire Line
+	3000 4800 3000 5100
+Wire Wire Line
+	2650 4900 3250 4900
+Wire Wire Line
+	3250 4900 3250 5100
+Wire Wire Line
+	3150 5150 2750 5150
+Wire Wire Line
+	2750 5150 2750 5100
+Wire Wire Line
+	2750 5100 2650 5100
+Wire Wire Line
+	2650 5000 2900 5000
+Wire Wire Line
+	2900 5000 2900 5400
+Wire Wire Line
+	2650 5500 3450 5500
+Wire Wire Line
+	3450 5500 3450 5000
+Wire Wire Line
+	3450 5000 3550 5000
+Wire Wire Line
+	3550 5500 3500 5500
+Wire Wire Line
+	3500 5500 3500 5450
+Wire Wire Line
+	3500 5450 2700 5450
+Wire Wire Line
+	2700 5450 2700 5400
+Wire Wire Line
+	2700 5400 2650 5400
+Wire Wire Line
+	3250 5100 3550 5100
+Wire Wire Line
+	3000 5100 3200 5100
+Wire Wire Line
+	3200 5100 3200 5200
+Wire Wire Line
+	3200 5200 3550 5200
+Wire Wire Line
+	2900 5400 3550 5400
+Wire Wire Line
+	3150 5150 3150 5350
+Wire Wire Line
+	3150 5350 3500 5350
+Wire Wire Line
+	3500 5350 3500 5300
+Wire Wire Line
+	3500 5300 3550 5300
 $Comp
 L power:+5V #PWR026
 U 1 1 60573331
@@ -1243,98 +1312,25 @@ Wire Wire Line
 Wire Wire Line
 	7500 2550 7500 2400
 $Comp
-L Display_Character:SM420561N U2
-U 1 1 620F3E73
+L Display_Character:HDSP-A151 U2
+U 1 1 62073E2A
 P 3850 5100
 F 0 "U2" H 3850 5767 50  0000 C CNN
-F 1 "SM420561N" H 3850 5676 50  0000 C CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 3900 4500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Wuxi-ARK-Tech-Elec-SM420561N_C141367.pdf" H 3350 5575 50  0001 L CNN
+F 1 "HDSP-A151" H 3850 5676 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 3850 4550 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-2553EN" H 3350 5650 50  0001 C CNN
 	1    3850 5100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1650 4850
 $Comp
-L 0805:R R10
-U 1 1 62556D66
-P 3150 1750
-F 0 "R10" H 3080 1704 50  0000 R CNN
-F 1 "10K" H 3080 1795 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 1750 50  0001 C CNN
-F 3 "~" H 3150 1750 50  0001 C CNN
-	1    3150 1750
+L Display_Character:SM420561N U?
+U 1 1 620F3E73
+P 4850 5050
+F 0 "U?" H 4850 5717 50  0000 C CNN
+F 1 "SM420561N" H 4850 5626 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 4900 4450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Wuxi-ARK-Tech-Elec-SM420561N_C141367.pdf" H 4350 5525 50  0001 L CNN
+	1    4850 5050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR029
-U 1 1 62557745
-P 3150 1450
-F 0 "#PWR029" H 3150 1300 50  0001 C CNN
-F 1 "+5V" H 3165 1623 50  0000 C CNN
-F 2 "" H 3150 1450 50  0001 C CNN
-F 3 "" H 3150 1450 50  0001 C CNN
-	1    3150 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1450 3150 1600
-Wire Wire Line
-	3150 1900 3150 2100
-Connection ~ 3150 2100
-Wire Wire Line
-	3550 5500 3350 5500
-Wire Wire Line
-	3350 5500 3350 4800
-Wire Wire Line
-	3550 5000 2950 5000
-Wire Wire Line
-	2950 5000 2950 4900
-Wire Wire Line
-	2950 4900 2650 4900
-Wire Wire Line
-	2650 5000 2900 5000
-Wire Wire Line
-	2900 5000 2900 5100
-Wire Wire Line
-	2900 5100 3550 5100
-Wire Wire Line
-	3550 5200 2850 5200
-Wire Wire Line
-	2850 5200 2850 5100
-Wire Wire Line
-	2850 5100 2650 5100
-Wire Wire Line
-	2650 5300 3250 5300
-Wire Wire Line
-	3250 5300 3250 4900
-Wire Wire Line
-	3250 4900 3550 4900
-Wire Wire Line
-	3250 5500 3250 5450
-Wire Wire Line
-	3250 5450 3450 5450
-Wire Wire Line
-	3450 5450 3450 5300
-Wire Wire Line
-	3450 5300 3550 5300
-Wire Wire Line
-	2650 5500 3250 5500
-Wire Wire Line
-	3350 4800 2650 4800
-Wire Wire Line
-	3400 4800 3550 4800
-Wire Wire Line
-	2650 5400 3400 5400
-Wire Wire Line
-	3400 5400 3400 4800
-Wire Wire Line
-	3500 5650 2800 5650
-Wire Wire Line
-	2800 5650 2800 5200
-Wire Wire Line
-	2800 5200 2650 5200
-Wire Wire Line
-	3500 5650 3500 5400
-Wire Wire Line
-	3500 5400 3550 5400
 $EndSCHEMATC

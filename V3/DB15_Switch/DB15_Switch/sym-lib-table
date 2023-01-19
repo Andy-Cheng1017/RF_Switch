@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name 1_resouce)(type Legacy)(uri ${KIPRJMOD}/1_resouce.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/Type-C.pretty-master/Type-C.lib)(options "")(descr ""))
+  (lib (name 0805)(type Legacy)(uri ${KIPRJMOD}/0805/0805.lib)(options "")(descr ""))
+  (lib (name STI3508)(type Legacy)(uri ${KIPRJMOD}/STI3508.lib)(options "")(descr ""))
+  (lib (name Resource)(type Legacy)(uri "G:/My Drive/上傳資料/兩輪平衡車專題/Project/Arduino-charger/Project V2/final project/Resource.lib")(options "")(descr ""))
+  (lib (name final-project-rescue)(type Legacy)(uri "G:/My Drive/上傳資料/兩輪平衡車專題/Project/Arduino-charger/Project V2/final project/final project-rescue.lib")(options "")(descr ""))
+  (lib (name DB15_Switch-rescue)(type Legacy)(uri ${KIPRJMOD}/DB15_Switch-rescue.lib)(options "")(descr ""))
+)
